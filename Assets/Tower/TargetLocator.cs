@@ -7,6 +7,7 @@ public class TargetLocator : MonoBehaviour
 {
     [SerializeField] Transform cannon;
     [SerializeField] ParticleSystem projectileParticles;
+    [SerializeField] ParticleSystem smokeParticles;
     [SerializeField] float range = 15f;
     Transform target;
 
@@ -52,5 +53,7 @@ public class TargetLocator : MonoBehaviour
     {
         var emission = projectileParticles.emission;
         emission.enabled = isActive;
+        var smokeEmission = smokeParticles.emission;
+        smokeEmission.enabled = isActive;
     }
 }

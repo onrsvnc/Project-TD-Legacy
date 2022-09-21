@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using System;
 
+#if UNITY_EDITOR
 [ExecuteAlways] 
 [RequireComponent(typeof(TextMeshPro))]
 public class CoordinateLabeler : MonoBehaviour
@@ -18,7 +19,7 @@ public class CoordinateLabeler : MonoBehaviour
     void Awake()
     {
         label = GetComponent<TextMeshPro>();
-        label.enabled = true;  //Change this before launch
+        label.enabled = false;  //Change this before launch
 
         waypoint = GetComponentInParent<Waypoint>();
         DisplayCoordinates();
@@ -70,3 +71,5 @@ public class CoordinateLabeler : MonoBehaviour
         transform.parent.name = coordinates.ToString();
     }
 }
+#endif
+

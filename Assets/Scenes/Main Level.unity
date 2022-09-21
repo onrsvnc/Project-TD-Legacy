@@ -2635,6 +2635,7 @@ GameObject:
   m_Component:
   - component: {fileID: 312937376}
   - component: {fileID: 312937377}
+  - component: {fileID: 312937378}
   m_Layer: 0
   m_Name: Lil Rock Island
   m_TagString: Untagged
@@ -2674,6 +2675,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 12.487198, y: 5.502998, z: 8.748188}
   m_Center: {x: 3.653038, y: 0.83673716, z: -1.6836262}
+--- !u!114 &312937378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312937375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a34b516d351b0642a8dfa71cf16dcfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitSFX: {fileID: 7826560577544431089, guid: c7a984413e473494e9fbe9d67ee8e711, type: 3}
+  hitVFX: {fileID: 7795633196634347669, guid: 629340c8899ed3c4dbdd4bf746b58b86, type: 3}
 --- !u!1001 &313493615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10231,6 +10246,7 @@ GameObject:
   - component: {fileID: 1209453175}
   - component: {fileID: 1209453174}
   - component: {fileID: 1209453176}
+  - component: {fileID: 1209453177}
   m_Layer: 0
   m_Name: rockFlatGrass (5)
   m_TagString: Untagged
@@ -10317,6 +10333,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.7863951, y: 0.8447755, z: 1.4478402}
   m_Center: {x: 0.0031966341, y: 0.4223863, z: -0.016079439}
+--- !u!114 &1209453177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209453172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a34b516d351b0642a8dfa71cf16dcfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitSFX: {fileID: 7826560577544431089, guid: c7a984413e473494e9fbe9d67ee8e711, type: 3}
+  hitVFX: {fileID: 7795633196634347669, guid: 629340c8899ed3c4dbdd4bf746b58b86, type: 3}
 --- !u!1001 &1211093594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14202,6 +14232,7 @@ GameObject:
   - component: {fileID: 1731148652}
   - component: {fileID: 1731148651}
   - component: {fileID: 1731148653}
+  - component: {fileID: 1731148654}
   m_Layer: 0
   m_Name: rockFlatGrass (5)
   m_TagString: Untagged
@@ -14288,6 +14319,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.7863947, y: 0.6853548, z: 1.0027856}
   m_Center: {x: 0.0031970476, y: 0.25476623, z: 0.049556836}
+--- !u!114 &1731148654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731148649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a34b516d351b0642a8dfa71cf16dcfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitSFX: {fileID: 7826560577544431089, guid: c7a984413e473494e9fbe9d67ee8e711, type: 3}
+  hitVFX: {fileID: 7795633196634347669, guid: 629340c8899ed3c4dbdd4bf746b58b86, type: 3}
 --- !u!4 &1732776077 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4370678956409675436, guid: 573ae011a804ebf4d97fe6f2aacdac39, type: 3}
@@ -18227,6 +18272,7 @@ GameObject:
   - component: {fileID: 988636028656888725}
   - component: {fileID: 988636028655790421}
   - component: {fileID: 988636028656888726}
+  - component: {fileID: 988636028656888727}
   m_Layer: 0
   m_Name: formation_stone
   m_TagString: Untagged
@@ -18297,6 +18343,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10.598512, y: 12.247501, z: 10.671252}
   m_Center: {x: 5.2992578, y: 6.1237526, z: 5.3356223}
+--- !u!114 &988636028656888727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988636028653598613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a34b516d351b0642a8dfa71cf16dcfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitSFX: {fileID: 7826560577544431089, guid: c7a984413e473494e9fbe9d67ee8e711, type: 3}
+  hitVFX: {fileID: 7795633196634347669, guid: 629340c8899ed3c4dbdd4bf746b58b86, type: 3}
 --- !u!33 &1026535608010894728
 MeshFilter:
   m_ObjectHideFlags: 0

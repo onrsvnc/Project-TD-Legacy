@@ -30,4 +30,9 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
+
+    public void LoadTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
 }

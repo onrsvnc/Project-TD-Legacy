@@ -10,11 +10,13 @@ public class EnemyHealth : MonoBehaviour
     
     [Tooltip("Adds amount to maxHitPoints when enemy dies")]
     [SerializeField] int difficultyRamp = 1;
-    [SerializeField] AudioClip[] audioClips;
+    [SerializeField] ParticleSystem hitVFX;
+    [SerializeField] GameObject hitSFX;
+    [SerializeField] GameObject deathSFX;
     
     int currentHitPoints = 0;
     Enemy enemy;
-    AudioSource audioSource;
+    
     void OnEnable()
     {
         currentHitPoints = maxHitPoints;
@@ -22,20 +24,20 @@ public class EnemyHealth : MonoBehaviour
     void Start()
     {
         enemy = GetComponent<Enemy>();
-        audioSource = GetComponent<AudioSource>();
     }
 
     void OnParticleCollision(GameObject other)
     {
         ProcessHit();
         HitSFX();
+        HitVFX();
     }
-
     void ProcessHit()
     {
         currentHitPoints--;
         if(currentHitPoints <= Mathf.Epsilon)
         {
+            DeathSFX();
             enemy.GoldRewarded();
             gameObject.SetActive(false);
             maxHitPoints += difficultyRamp;
@@ -44,7 +46,25 @@ public class EnemyHealth : MonoBehaviour
 
     void HitSFX()
     {
-        audioSource.clip = audioClips[Random.Range(0, audioClips.Length)];
-        audioSource.Play();
+        if(hitSFX != null)
+        {
+            GameObject instance = Instantiate(hitSFX, transform.position, Quaternion.identity);
+        }
     }
+    void HitVFX()
+    {
+        if(hitVFX != null)
+        {
+            ParticleSystem instance = Instantiate(hitVFX, transform.position, Quaternion.identity);
+            Destroy(instance.gameObject, instance.main.duration + instance.main.startLifetime.constantMax);
+        }
+    }
+    void DeathSFX()
+    {
+        if(deathSFX != null)
+        {
+            GameObject instance = Instantiate(deathSFX, transform.position, Quaternion.identity);
+        }
+    }
+
 }
